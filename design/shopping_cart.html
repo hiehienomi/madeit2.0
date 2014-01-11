@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Made It</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="css/reset.css" rel="stylesheet" type="text/css" />
+        <link href="css/960_24_col.css" rel="stylesheet" type="text/css" />
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <link href="js/zebra-datepicker.1.6.2/css/zebra_datepicker_metallic.css" rel="stylesheet" type="text/css" />
+        <link href="css/jquery.jscrollpane.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+        <script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+        <script type="text/javascript" src="js/jquery.bgiframe.min.js"></script>
+        <script type="text/javascript" src="js/jquery.dimensions.js"></script>
+        <script type="text/javascript" src="js/jquery.tooltip.min.js"></script>
+        <script type="text/javascript" src="js/zebra-datepicker.1.6.2/javascript/zebra_datepicker.js"></script>
+        <script type="text/javascript" src="js/jquery.idTabs.min.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
+    </head>
+    <body>
+        <div class="container_24" id="wrapper">
+            <div class="grid_24">
+                <ul class="float_left top_menu top_left_menu li_float_left">
+                    <li><a href="">giới thiệu</a></li>
+                    <li><a href="">mua</a></li>
+                    <li><a href="">bán</a></li>
+                    <li><a href="">gian hàng</a></li>
+                    <li><a href="">blog</a></li>
+                    <li><a href="">khuyến mãi</a></li>
+                    <li><a href="">sự kiện</a></li>
+                </ul>
+                <ul class="li_float_left float_left" style="margin-top: 4px;">
+                    <li class="margin_right_10"><a href=""><img src="images/vn.gif" width="30" height="20" /></a></li>
+                    <li><a href=""><img src="images/en.jpg" width="30" height="20" /></a></li>
+                </ul>
+                <ul class="float_right top_menu top_right_menu li_float_left">
+                    <li><a href="register_acc.html#reg_acc_form" class="link" onclick="triggerTabClick( 'reg_acc_form' )">đăng ký</a></li>
+                    <li><a href="register_acc.html#login_acc_form" class="link" onclick="triggerTabClick( 'login_acc_form' )">đăng nhập</a></li>
+                </ul>
+                <div class="clear"></div>
+
+                <div class="content">
+                    <a href="" id="logo"><img src="images/logo.png" width="180" height="110" alt="Logo Made It"/></a>
+                    <div class="container">
+                        <div class="grid_6 alpha">
+                            <div class="grid_2 prefix_2 suffix_2">
+                                <a href="" class="grid_1 alpha social_icon email_ico">Email</a>
+                                <a href="" class="grid_1 omega social_icon rss_ico">RSS</a>
+                                <div class="height5 clear"></div>
+                                <a href="" class="grid_1 alpha social_icon tw_ico">Twitter</a>
+                                <a href="" class="grid_1 omega social_icon fb_ico">Facebook</a>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+
+                        <div class="grid_18 omega">
+                            <div id="main">
+                                <div class="blue_bg">
+                                    <div class="blue_bg_tool">
+                                        <form action="" method="post" class="float_left">
+                                            <input style="margin-right: 8px;" type="text" class="grid_8 alpha" id="searchTxt" value="bất kỳ từ khóa nào" onclick="this.value=''" onblur="if(this.value == '') this.value = 'bất kỳ từ khóa nào';"/>
+                                            <div class="comboBox grid_5" style="margin-right: 8px;">
+                                                <span>sản phẩm tái chế</span>
+                                                <select name="cate">
+                                                    <option>sản phẩm tái chế</option>
+                                                    <option>thiệp - quà tặng</option>
+                                                    <option>nguyên vật liệu</option>
+                                                </select>
+                                            </div>
+                                            <button id="searchBtn">tìm kiếm</button>
+                                        </form>
+                                        <a href="#" class="cartBtn float_right">
+                                            <span>12</span>
+                                        </a>
+                                        <div class="minicart">
+                                            <div class="minicart_product">
+                                                <a href="" class="minicart_del_btn"><img src="images/del_item.png" width="11" height="11" /></a>
+                                                <div class="float_left minicart_product_img">
+                                                    <a href=""><img src="images/new_sp1.jpg" width="82" height="62" /></a>
+                                                </div>
+                                                <div class="float_left minicart_product_info">
+                                                    <a href="" class="pink_color minicart_product_name">Cốc nhựa gai</a>
+                                                    <p class="minicart_product_price">33 000 đ</p>
+                                                </div>
+                                                <div class="clear"></div>
+                                            </div>
+
+                                            <div class="minicart_product">
+                                                <a href="" class="minicart_del_btn"><img src="images/del_item.png" width="11" height="11" /></a>
+                                                <div class="float_left minicart_product_img">
+                                                    <a href=""><img src="images/new_sp1.jpg" width="82" height="62" /></a>
+                                                </div>
+                                                <div class="float_left minicart_product_info">
+                                                    <a href="" class="pink_color minicart_product_name">Cốc nhựa gai</a>
+                                                    <p class="minicart_product_price">33 000 đ</p>
+                                                </div>
+                                                <div class="clear"></div>
+                                            </div>
+
+                                            <div class="minicart_summary">
+                                                <p><b>Thành tiền: </b>1,000,000 đ</p>
+                                                <p><b>Tổng cộng: </b>1,000,000 đ</p>
+                                            </div>
+
+                                            <ul class="minicart_menu">
+                                                <li><a href=""><b class="pink_color">Thanh toán</b></a></li>
+                                                <li>|</li>
+                                                <li><a href=""><b class="blue_color">Xem giỏ hàng</b></a></li>
+                                            </ul>
+                                        </div>
+                                        <!-- use this code when your cart is empty -->
+                                        <!-- <a href="" class="cartEmptyBtn float_left"></a> -->
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                                <div class="clear height10 margin_top_10"></div>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+
+                        <div style="padding: 10px 40px 10px 40px">
+                            <div class="big_title">giỏ hàng của bạn</div>
+
+                            <p class="margin_top_20 margin_bottom_10">Hiện có <b>5</b> sản phẩm trong giỏ hàng</p>
+                            <p class="margin_bottom_20">Giá trị giỏ hàng: <span class="pink_color">1.600.600</span></p>
+
+                            <div class="margin_bottom_20">
+                                <div class="grid_13 alpha">
+                                    <div>
+                                        <h4 class="blue_color float_left margin_right_10">Gian hàng A</h4>
+                                        <a href="" class="float_left" style="margin-top:3px;"><img src="images/del_item.png" width="11" height="11"></a>
+                                        <div class="clear"></div>
+                                    </div>
+                                    <table class="shopping_cart_table" width="100%">
+                                        <thead>
+                                            <tr>
+                                                <th width="40%" align="left" class="whitePink_block">Sản phẩm</th>
+                                                <th width="20%" align="center" class="whitePink_block">Giá bán</th>
+                                                <th width="20%" align="center" class="whitePink_block">Số lượng</th>
+                                                <th width="20%" align="center" class="whitePink_block">Thành tiền</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td align="left">
+                                                    <a href="" class="float_left relative">
+                                                        <img src="images/new_sp1.jpg" width="75" height="62"/>
+                                                        <div class="absolute" style="right: 5px; top: 5px; width: 27px;">
+                                                            <span class="delInfoBtn">Del Info</span>
+                                                        </div>
+                                                    </a>
+                                                    <span class="float_left">Cốc nhựa gai</span>
+                                                </td>
+                                                <td align="center">190,000</td>
+                                                <td align="center"><input class="border_radius_5" type="text" value="1" style="border:1px solid #CCC; width: 60px; text-align: center;"/></td>
+                                                <td align="center">190,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td align="left">
+                                                    <a href="" class="float_left relative">
+                                                        <img src="images/new_sp1.jpg" width="75" height="62"/>
+                                                        <div class="absolute" style="right: 5px; top: 5px; width: 27px;">
+                                                            <span class="delInfoBtn">Del Info</span>
+                                                        </div>
+                                                    </a>
+                                                    <span class="float_left">Cốc nhựa gai</span>
+                                                </td>
+                                                <td align="center">190,000</td>
+                                                <td align="center"><input class="border_radius_5" type="text" value="1" style="border:1px solid #CCC; width: 60px; text-align: center;"/></td>
+                                                <td align="center">190,000</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <div class="margin_top_10" style="text-align: right">Tổng tiền: <span class="pink_color">380.000 đ</span></div>
+
+                                    <div class="margin_bottom_20" style="margin-top: 40px;">
+                                        <ul class="idTabs product_detail_tab"> 
+                                            <li><a href="#shop1_cart_tab1">Giao nhận</a></li> 
+                                            <li><a href="#shop1_cart_tab2">Thanh toán</a></li> 
+                                            <li><a href="#shop1_cart_tab3">Chính sách khác</a></li>
+                                        </ul>
+                                        <div class="clear"></div>
+                                        <div id="shop1_cart_tab1" style="width: 478px" class="product_detail_tab_desc border_radius_5 whitePink_block"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div> 
+                                        <div id="shop1_cart_tab2" style="width: 478px" class="product_detail_tab_desc border_radius_5 whitePink_block">Nội dung tab thanh toán</div>
+                                        <div id="shop1_cart_tab3" style="width: 478px" class="product_detail_tab_desc border_radius_5 whitePink_block">Nội dung tab hoàn đổi</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                                <div class="grid_1">&nbsp;</div>
+                                <div class="grid_8 omega">
+                                    <h4>Thông tin thanh toán</h4>
+
+                                    <form class="madeit_form" style="padding: 20px 0">
+                                        <input type="text" placeholder="Tên" class="textbox tooltipHint border_radius_5 margin_bottom_10" title="Nội dung tooltip"/>
+                                        <div class="clear"></div>
+                                        <input type="text" placeholder="Điện thoại" class="textbox tooltipHint border_radius_5 margin_bottom_10" title="Nội dung tooltip"/>
+                                        <div class="clear"></div>
+                                        <input type="text" placeholder="Email" class="textbox tooltipHint border_radius_5 margin_bottom_10" title="Nội dung tooltip"/>
+                                        <div class="clear"></div>
+                                        <input type="text" placeholder="Địa chỉ" class="textbox tooltipHint border_radius_5 margin_bottom_10" title="Nội dung tooltip"/>
+                                        <div class="clear"></div>
+                                        <select style="padding: 3px; width: 150px; margin-right: 6px;" title="Nội dung tooltip" class="ccc_border border_radius_5 tooltipHint">
+                                            <option>Quận / Huyên</option>
+                                        </select>
+                                        <select style="padding: 3px; width: 150px;" title="Nội dung tooltip" class="ccc_border border_radius_5 tooltipHint">
+                                            <option>Tỉnh thành</option>
+                                        </select>
+                                        <div class="clear margin_bottom_10"></div>
+                                        <select style="padding: 3px; width: 250px;" title="Nội dung tooltip" class="ccc_border border_radius_5 tooltipHint">
+                                            <option>Hình thức thanh toán</option>
+                                        </select>
+                                    </form>
+
+                                    <h4 class="margin_top_20">Thông tin giao nhận</h4>
+
+                                    <form class="madeit_form" style="padding: 20px 0">
+                                        <input type="checkbox" class="float_left margin_right_10" /><span style="padding-top: 3px;"class="float_left">Giống với thông tin thanh toán</span>
+                                        <div class="clear margin_bottom_10"></div>
+                                        <input type="text" placeholder="Tên" class="textbox tooltipHint border_radius_5 margin_bottom_10" title="Nội dung tooltip"/>
+                                        <div class="clear"></div>
+                                        <input type="text" placeholder="Điện thoại" class="textbox tooltipHint border_radius_5 margin_bottom_10" title="Nội dung tooltip"/>
+                                        <div class="clear"></div>
+                                        <input type="text" placeholder="Email" class="textbox tooltipHint border_radius_5 margin_bottom_10" title="Nội dung tooltip"/>
+                                        <div class="clear"></div>
+                                        <input type="text" placeholder="Địa chỉ" class="textbox tooltipHint border_radius_5 margin_bottom_10" title="Nội dung tooltip"/>
+                                        <div class="clear"></div>
+                                        <select style="padding: 3px; width: 150px; margin-right: 6px;" title="Nội dung tooltip" class="ccc_border border_radius_5 tooltipHint">
+                                            <option>Quận / Huyên</option>
+                                        </select>
+                                        <select style="padding: 3px; width: 150px;" title="Nội dung tooltip" class="ccc_border border_radius_5 tooltipHint">
+                                            <option>Tỉnh thành</option>
+                                        </select>
+                                        <div class="clear margin_bottom_20"></div>
+
+                                        <span class="block margin_bottom_10">Ghi chú khác (nếu có)</span>
+                                        <textarea style="height: 100px; width: 304px; border: 0"class="border_radius_5 tooltipHint" title="Nội dung tooltip cho Ghi chú"></textarea>
+
+                                        <button style="margin-top: 10px;" type="button" class="float_right blue_btn form_btn" onclick="openMadeItLightBox()">Gửi order đến gian hàng</button>
+                                        <div class="clear"></div>
+                                    </form>
+                                </div>
+
+                                <div class="clear"></div>
+                            </div>
+                            
+                            <div class="margin_bottom_20">
+                                <div class="grid_13 alpha">
+                                    <div>
+                                        <h4 class="blue_color float_left margin_right_10">Gian hàng B</h4>
+                                        <a href="" class="float_left" style="margin-top:3px;"><img src="images/del_item.png" width="11" height="11"></a>
+                                        <div class="clear"></div>
+                                    </div>
+                                    <table class="shopping_cart_table" width="100%">
+                                        <thead>
+                                            <tr>
+                                                <th width="40%" align="left" class="whitePink_block">Sản phẩm</th>
+                                                <th width="20%" align="center" class="whitePink_block">Giá bán</th>
+                                                <th width="20%" align="center" class="whitePink_block">Số lượng</th>
+                                                <th width="20%" align="center" class="whitePink_block">Thành tiền</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td align="left">
+                                                    <a href="" class="float_left relative">
+                                                        <img src="images/new_sp1.jpg" width="75" height="62"/>
+                                                        <div class="absolute" style="right: 5px; top: 5px; width: 27px;">
+                                                            <span class="delInfoBtn">Del Info</span>
+                                                        </div>
+                                                    </a>
+                                                    <span class="float_left">Cốc nhựa gai</span>
+                                                </td>
+                                                <td align="center">190,000</td>
+                                                <td align="center"><input class="border_radius_5" type="text" value="1" style="border:1px solid #CCC; width: 60px; text-align: center;"/></td>
+                                                <td align="center">190,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td align="left">
+                                                    <a href="" class="float_left relative">
+                                                        <img src="images/new_sp1.jpg" width="75" height="62"/>
+                                                        <div class="absolute" style="right: 5px; top: 5px; width: 27px;">
+                                                            <span class="delInfoBtn">Del Info</span>
+                                                        </div>
+                                                    </a>
+                                                    <span class="float_left">Cốc nhựa gai</span>
+                                                </td>
+                                                <td align="center">190,000</td>
+                                                <td align="center"><input class="border_radius_5" type="text" value="1" style="border:1px solid #CCC; width: 60px; text-align: center;"/></td>
+                                                <td align="center">190,000</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <div class="margin_top_10" style="text-align: right">Tổng tiền: <span class="pink_color">380.000 đ</span></div>
+
+                                    <div class="margin_bottom_20" style="margin-top: 40px;">
+                                        <ul class="idTabs product_detail_tab">
+                                            <li><a href="#shop2_cart_tab1">Giao nhận</a></li> 
+                                            <li><a href="#shop2_cart_tab2">Thanh toán</a></li> 
+                                            <li><a href="#shop2_cart_tab3">Chính sách khác</a></li>
+                                        </ul>
+                                        <div class="clear"></div>
+                                        <div id="shop2_cart_tab1" style="width: 478px" class="product_detail_tab_desc border_radius_5 whitePink_block"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div> 
+                                        <div id="shop2_cart_tab2" style="width: 478px" class="product_detail_tab_desc border_radius_5 whitePink_block">Nội dung tab thanh toán</div>
+                                        <div id="shop2_cart_tab3" style="width: 478px" class="product_detail_tab_desc border_radius_5 whitePink_block">Nội dung tab hoàn đổi</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                                <div class="grid_1">&nbsp;</div>
+                                <div class="grid_8 omega">
+                                    <h4>Thông tin thanh toán</h4>
+
+                                    <form class="madeit_form" style="padding: 20px 0">
+                                        <input type="checkbox" class="float_left margin_right_10" /><span style="padding-top: 3px;" class="float_left">Giống thông tin thanh toán của gian hàng trên</span>
+                                        <div class="clear margin_bottom_10"></div>
+                                        <input type="text" placeholder="Tên" class="textbox tooltipHint border_radius_5 margin_bottom_10" title="Nội dung tooltip"/>
+                                        <div class="clear"></div>
+                                        <input type="text" placeholder="Điện thoại" class="textbox tooltipHint border_radius_5 margin_bottom_10" title="Nội dung tooltip"/>
+                                        <div class="clear"></div>
+                                        <input type="text" placeholder="Email" class="textbox tooltipHint border_radius_5 margin_bottom_10" title="Nội dung tooltip"/>
+                                        <div class="clear"></div>
+                                        <input type="text" placeholder="Địa chỉ" class="textbox tooltipHint border_radius_5 margin_bottom_10" title="Nội dung tooltip"/>
+                                        <div class="clear"></div>
+                                        <select style="padding: 3px; width: 150px; margin-right: 6px;" title="Nội dung tooltip" class="ccc_border border_radius_5 tooltipHint">
+                                            <option>Quận / Huyên</option>
+                                        </select>
+                                        <select style="padding: 3px; width: 150px;" title="Nội dung tooltip" class="ccc_border border_radius_5 tooltipHint">
+                                            <option>Tỉnh thành</option>
+                                        </select>
+                                        <div class="clear margin_bottom_10"></div>
+                                        <select style="padding: 3px; width: 250px;" title="Nội dung tooltip" class="ccc_border border_radius_5 tooltipHint">
+                                            <option>Hình thức thanh toán</option>
+                                        </select>
+                                    </form>
+
+                                    <h4 class="margin_top_20">Thông tin giao nhận</h4>
+
+                                    <form class="madeit_form" style="padding: 20px 0">
+                                        <input type="checkbox" class="float_left margin_right_10" /><span style="padding-top: 3px;" class="float_left">Giống với thông tin thanh toán</span>
+                                        <div class="clear margin_bottom_10"></div>
+                                        <input type="text" placeholder="Tên" class="textbox tooltipHint border_radius_5 margin_bottom_10" title="Nội dung tooltip"/>
+                                        <div class="clear"></div>
+                                        <input type="text" placeholder="Điện thoại" class="textbox tooltipHint border_radius_5 margin_bottom_10" title="Nội dung tooltip"/>
+                                        <div class="clear"></div>
+                                        <input type="text" placeholder="Email" class="textbox tooltipHint border_radius_5 margin_bottom_10" title="Nội dung tooltip"/>
+                                        <div class="clear"></div>
+                                        <input type="text" placeholder="Địa chỉ" class="textbox tooltipHint border_radius_5 margin_bottom_10" title="Nội dung tooltip"/>
+                                        <div class="clear"></div>
+                                        <select style="padding: 3px; width: 150px; margin-right: 6px;" title="Nội dung tooltip" class="ccc_border border_radius_5 tooltipHint">
+                                            <option>Quận / Huyên</option>
+                                        </select>
+                                        <select style="padding: 3px; width: 150px;" title="Nội dung tooltip" class="ccc_border border_radius_5 tooltipHint">
+                                            <option>Tỉnh thành</option>
+                                        </select>
+                                        <div class="clear margin_bottom_20"></div>
+
+                                        <span class="block margin_bottom_10">Ghi chú khác (nếu có)</span>
+                                        <textarea style="height: 100px; width: 304px; border: 0" class="border_radius_5 tooltipHint" title="Nội dung tooltip cho Ghi chú"></textarea>
+
+                                        <button style="margin-top: 10px;" type="button" class="float_right blue_btn form_btn" onclick="openMadeItLightBox()">Gửi order đến gian hàng</button>
+                                        <div class="clear"></div>
+                                    </form>
+                                </div>
+
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                        <!--                            <ul class="idTabs shopping_cart_step"> 
+                                                        <li>
+                                                            <div class="shopping_cart_step_noClick"></div>
+                                                            <div class="shopping_cart_step_anchor">
+                                                                <span class="shopping_cart_step_bg">1</span>
+                                                                <a href="#shopping_cart_step1" class="shopping_cart_step_text">Cập nhật giỏ hàng</a>
+                                                                <div class="clear"></div>
+                                                            </div>
+                                                        </li> 
+                                                        <li>
+                                                            <div class="shopping_cart_step_noClick"></div>
+                                                            <div class="shopping_cart_step_anchor">
+                                                                <span class="shopping_cart_step_bg">2</span>
+                                                                <a href="#shopping_cart_step2" class="shopping_cart_step_text">Thông tin đơn hàng</a>
+                                                                <div class="clear"></div>
+                                                            </div>
+                                                        </li> 
+                                                        <li>
+                                                            <div class="shopping_cart_step_noClick"></div>
+                                                            <div class="shopping_cart_step_anchor">
+                                                                <span class="shopping_cart_step_bg">3</span>
+                                                                <a href="#shopping_cart_step3" class="shopping_cart_step_text">Hoàn tất</a>
+                                                                <div class="clear"></div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+
+                        <div class="clear margin_top_10 height10"></div>
+
+                        <div id="shopping_cart_step1">
+                            <div>Gian hàng A</div>
+                            <table class="shopping_cart_table" width="100%">
+                                <thead>
+                                    <tr>
+                                        <th width="40%" align="left" class="whitePink_block">Sản phẩm</th>
+                                        <th width="15%" align="center" class="whitePink_block">Giá bán</th>
+                                        <th width="15%" align="center" class="whitePink_block">Số lượng</th>
+                                        <th width="15%" align="center" class="whitePink_block">Thành tiền</th>
+                                        <th width="15%" align="center" class="whitePink_block">Hoạt động</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td align="left">
+                                            <a href="" class="float_left"><img src="images/new_sp1.jpg" width="75" height="62"/></a>
+                                            <span class="float_left">Cốc nhựa gai</span>
+                                        </td>
+                                        <td align="center">190,000</td>
+                                        <td align="center"><input class="border_radius_5" type="text" value="1" style="border:1px solid #CCC; width: 60px; text-align: center;"/></td>
+                                        <td align="center">190,000</td>
+                                        <td align="center"><a href="">x</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left">
+                                            <a href="" class="float_left"><img src="images/new_sp1.jpg" width="75" height="62"/></a>
+                                            <span class="float_left">Cốc nhựa gai</span>
+                                        </td>
+                                        <td align="center">190,000</td>
+                                        <td align="center"><input class="border_radius_5" type="text" value="1" style="border:1px solid #CCC; width: 60px; text-align: center;"/></td>
+                                        <td align="center">190,000</td>
+                                        <td align="center"><a href="">x</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <div>Gian hàng B</div>
+                            <table class="shopping_cart_table" width="100%">
+                                <thead>
+                                    <tr>
+                                        <th width="40%" align="left" class="whitePink_block">Sản phẩm</th>
+                                        <th width="15%" align="center" class="whitePink_block">Giá bán</th>
+                                        <th width="15%" align="center" class="whitePink_block">Số lượng</th>
+                                        <th width="15%" align="center" class="whitePink_block">Thành tiền</th>
+                                        <th width="15%" align="center" class="whitePink_block">Hoạt động</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td align="left">
+                                            <a href="" class="float_left"><img src="images/new_sp1.jpg" width="75" height="62"/></a>
+                                            <span class="float_left">Cốc nhựa gai</span>
+                                        </td>
+                                        <td align="center">190,000</td>
+                                        <td align="center"><input class="border_radius_5" type="text" value="1" style="border:1px solid #CCC; width: 60px; text-align: center;"/></td>
+                                        <td align="center">190,000</td>
+                                        <td align="center"><a href="">x</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left">
+                                            <a href="" class="float_left"><img src="images/new_sp1.jpg" width="75" height="62"/></a>
+                                            <span class="float_left">Cốc nhựa gai</span>
+                                        </td>
+                                        <td align="center">190,000</td>
+                                        <td align="center"><input class="border_radius_5" type="text" value="1" style="border:1px solid #CCC; width: 60px; text-align: center;"/></td>
+                                        <td align="center">190,000</td>
+                                        <td align="center"><a href="">x</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <div style="text-align: right">
+                                Tổng tiền 190 000
+                            </div>
+
+                            <div style="text-align: right; margin-top: 10px">
+                                Thanh toán <span class="pink_color">570 000</span>
+                            </div>
+
+                            <div class="clear"></div>
+                        </div>
+
+                        <div id="shopping_cart_step2">
+
+                            <div class="errors border_radius_5">
+                                <ul>
+                                    <li>Vui lòng nhập họ tên</li>
+                                    <li>Vui lòng nhập email</li>
+                                </ul>
+                            </div>
+
+                            <form class="shipping_form">
+                                <div class="float_left floatBlock">
+                                    <label>Họ tên <span >(*)</span></label>
+                                    <input type="text" class="textbox tooltipHint border_radius_5" title="Nội dung tooltip cho Họ Tên"/>
+                                </div>
+
+                                <div class="float_left floatBlock">
+                                    <label>Điện thoại <span >(*)</span></label>
+                                    <input type="text" class="textbox tooltipHint border_radius_5" title="Nội dung tooltip cho Điện thoại"/>
+                                </div>
+
+                                <div class="float_left floatBlock last_child">
+                                    <label>Email <span >(*)</span></label>
+                                    <input type="text" class="textbox tooltipHint border_radius_5" title="Nội dung tooltip cho Email"/>
+                                </div>
+
+                                <div class="clear height10"></div>
+
+                                <div class="float_left floatBlock">
+                                    <label>Địa chỉ <span >(*)</span></label>
+                                    <input type="text" class="textbox tooltipHint border_radius_5" title="Nội dung tooltip cho Địa chỉ"/>
+                                </div>
+
+                                <div class="float_left floatBlock">
+                                    <label>Tỉnh / Thành phố <span >(*)</span></label>
+                                    <select title="Nội dung tooltip cho thành phố" class="border_radius_5 tooltipHint">
+                                        <option>Hồ Chí Minh</option>
+                                        <option>Hà Nội</option>
+                                    </select>
+                                </div>
+
+                                <div class="float_left floatBlock last_child">
+                                    <label>Quận / Huyện <span >(*)</span></label>
+                                    <input type="text" class="textbox tooltipHint border_radius_5" title="Nội dung tooltip cho Quận Huyện"/>
+                                </div>
+
+                                <div class="clear height10"></div>
+
+                                <div class="float_left">
+                                    <label>Ghi chú</label>
+                                    <textarea class="border_radius_5 tooltipHint" title="Nội dung tooltip cho Ghi chú"></textarea>
+                                </div>
+
+                                <div class="clear height10 margin_top_10"></div>
+
+                                <input type="checkbox" class="float_left" name=""/> <span class="float_left" style="display: block; padding-top:2px;margin-left: 10px;">Chọn nếu bạn không phải là người nhận hoặc địa chỉ nhận hàng khác địa chỉ đăng ký</span>
+
+                                <div class="clear height10 margin_top_10"></div>
+
+                                <div class="float_left floatBlock">
+                                    <label>Họ tên <span >(*)</span></label>
+                                    <input type="text" class="textbox tooltipHint border_radius_5" title="Nội dung tooltip cho Họ Tên"/>
+                                </div>
+
+                                <div class="float_left floatBlock">
+                                    <label>Điện thoại <span >(*)</span></label>
+                                    <input type="text" class="textbox tooltipHint border_radius_5" title="Nội dung tooltip cho Điện thoại"/>
+                                </div>
+
+                                <div class="float_left floatBlock last_child">
+                                    <label>Email <span >(*)</span></label>
+                                    <input type="text" class="textbox tooltipHint border_radius_5" title="Nội dung tooltip cho Email"/>
+                                </div>
+
+                                <div class="clear height10"></div>
+
+                                <div class="float_left floatBlock">
+                                    <label>Địa chỉ <span >(*)</span></label>
+                                    <input type="text" class="textbox tooltipHint border_radius_5" title="Nội dung tooltip cho Địa chỉ"/>
+                                </div>
+
+                                <div class="float_left floatBlock">
+                                    <label>Tỉnh / Thành phố <span >(*)</span></label>
+                                    <select title="Nội dung tooltip cho thành phố" class="border_radius_5 tooltipHint">
+                                        <option>Hồ Chí Minh</option>
+                                        <option>Hà Nội</option>
+                                    </select>
+                                </div>
+
+                                <div class="float_left floatBlock last_child">
+                                    <label>Quận / Huyện <span >(*)</span></label>
+                                    <input type="text" class="textbox tooltipHint border_radius_5" title="Nội dung tooltip cho Quận Huyện"/>
+                                </div>
+
+                                <div class="clear height10"></div>
+
+                            </form>
+                        </div>
+
+                        <div id="shopping_cart_step3">
+                            <div class="border_radius_5 padding_10 ccc_border">
+                                <p>Đơn đặt hàng đã được gửi thành công</p>
+                                <p>Gian hàng sẽ liên hệ với bạn để xác nhận đơn hàng và thỏa thuận phương thức thanh toán và giao hàng qua hộp thư</p>
+                                <p>Nếu trong quá trình giao dịch với gian hàng có những trải nghiệm không thoải mái, bạn có thể gửi đánh giá đến gian hàng <a href="" class="blue_color">tại đây</a></p>
+                                <p><i>Đội ngũ madeit.</i></p>
+                            </div>
+                        </div>
+
+                        <input type="hidden" value="shopping_cart_step2" name="shopping_cart_nexttabid" id="shopping_cart_nexttabid" />
+                        <input type="hidden" value="shopping_cart_step1" name="shopping_cart_prevtabid" id="shopping_cart_prevtabid" />
+                        <button style="margin-top: 10px" type="button" id="triggerTabNextClick" class="float_right green_btn form_btn">Tiếp tục</button>
+                        <button style="margin-top: 10px; margin-right: 10px; display: none" id="triggerTabPrevClick" type="button" class="float_right grey_btn form_btn">Quay lại</button>
+                        <button style="margin-top: 10px; margin-right: 10px;" id="updateShoppingCart" type="button" class="float_right blue_btn form_btn">Cập nhật</button>
+                        <button style="margin-top: 10px; display: none;" onclick="window.location = 'index.html'" id="goHomeBtn" type="button" class="green_btn float_right green form_btn">Trang chủ</button>
+                        -->
+
+
+                        <div style="padding: 0 10px 10px 40px; margin-bottom: 10px;border-bottom: 2px solid #ccc; ">
+                            <p class="float_left" style="padding-top:135px">copyright &copy; 2012 Made it. all right reserved</p>
+                            <div class="bottom_deco"><img src="images/bottom_decor.png" /></div>
+                            <div class="clear"></div>
+                        </div>
+
+                        <!--                        <div class="float_left" style="padding: 10px 0 0 40px;"><a href="http://silentsword.net" target="_blank">Interactive design by Silent Sword</a></div>-->
+
+                        <ul class="float_right foot_menu li_float_left">
+                            <li><a href="">liên hệ</a></li>
+                            <li><a href="">điều khoản</a></li>
+                            <li><a href="">câu hỏi thường gặp</a></li>
+                            <li><a href="">quảng cáo</a></li>
+                        </ul>
+
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="bottombg"></div>
+
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=143153062489569";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+        
+        <div class="madeit_overlay"></div>
+        <div class="madeit_lightbox">
+            <div class="madeit_lightbox_big_title">
+                Thông báo
+                <a href="#" class="madeit_lightbox_close float_right">
+                    <span class="madeit_lightbox_close_label">đóng</span>
+                    <span class="madeit_lightbox_close_btn">&nbsp;</span>
+                    <div class="clear"></div>
+                </a>
+                <div class="clear"></div>
+            </div>
+            <div class="container_24" style="width: 550px; margin-top:20px;">
+                <div class="list_event">
+                    <div class="grid_14 alpha omega" style="padding-right: 10px;width:340px; min-height: 200px; max-height: 350px; overflow: auto;">
+                        <p>Đơn hàng đã được gửi thành công</p>
+
+                        <p>Gian hàng sẽ liên hệ với bạn để xác nhận đơn hàng và thỏa thuận phương thức thanh toán và giao hàng qua hộp thư</p>
+
+                        <p>Nếu trong quá trình giao dịch với gian hàng có những trải nghiệm không thoải mái, bạn có thể gửi đánh giá đến gian hàng tại đây.</p>
+
+                        <p>Trân trọng,<br />Đội ngũ Madeit</p>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
